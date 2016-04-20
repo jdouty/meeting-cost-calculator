@@ -3,5 +3,5 @@
 Select the number of participants to get started.
 <br /><br />
 {{#each model as |participant|}}
-  <h2>{{participant.title}}</h2>
+  {{participants-list participant=participant}}
 {{/each}}
