@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 # Meeting-cost-calculator
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Estimate how much your meetings cost by adding developers, qa, ba, and business managers. Using glassdoor average salary for each position.
 
 ## Prerequisites
 
@@ -51,8 +49,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
-=======
-# meeting-cost-calculator
-Estimate how much your meetings cost by adding developers, qa, ba, and business managers. Using glassdoor average salary for each position.
->>>>>>> b2953f943eaf2d3675b3d6083c8f60ba2c4597b6
