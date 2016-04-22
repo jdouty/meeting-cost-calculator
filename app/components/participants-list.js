@@ -11,5 +11,11 @@ export default Ember.Component.extend({
 				this.decrementProperty('numOf');
 			}
 		}
-	}
+	},
+
+	totalCostPerMinute : Ember.computed('numOf', function() {
+		var costPerMinute = this.get('numOf') * this.get('participant').get('perMinute');
+		var formatted = parseFloat(costPerMinute, 10).toFixed(2);
+		return '$' + formatted;
+	})
 });
