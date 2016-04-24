@@ -7,7 +7,8 @@ var default_data = [{
     title: 'Number of DEVs',
     perYear: 100000,
     perHour: 48.08,
-    perMinute: 0.80
+    perMinute: 0.80,
+    numOf: 0
   },
   relationships: {}
 }, {
@@ -17,7 +18,8 @@ var default_data = [{
     title: 'Number of QAs',
     perYear: 82000,
     perHour: 39.42,
-    perMinute: 0.66
+    perMinute: 0.66,
+    numOf: 0
   },
   relationships: {}
 }, {
@@ -27,17 +29,18 @@ var default_data = [{
     title: 'Number of BAs',
     perYear: 75000,
     perHour: 36.06,
-    perMinute: 0.60
+    perMinute: 0.60,
+    numOf: 0
   },
   relationships: {}
 }];
 
 export default Ember.Route.extend({
-	model() {
+  model() {
     this.store.push({
       data: default_data
     });
 
     return this.store.peekAll('participants');
-	}
+  }
 });

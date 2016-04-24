@@ -1,9 +1,17 @@
-<h1>Developer Meeting Cost Calculator</h1>
+<div id="header">
+	<h1>How much did your meeting cost?</h1>
 
-Select the meeting length and number of participants to get started.
-<br /><br />
+	Select the meeting length and number of participants to get started.
+	<br /><br />
+</div>
 
-
-{{#each model as |data|}}
-  {{participants-list participant=data}}
-{{/each}}
+<div id="container">
+	<div id="left">
+		{{#each model as |data|}}
+		  {{participants-list participant=data}}
+		{{/each}}
+	</div>
+	<div id="right">
+		{{meeting-cost participants=model}}
+	</div>
+</div>

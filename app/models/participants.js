@@ -5,5 +5,6 @@ export default Model.extend({
   title: DS.attr('string'),
   perYear: DS.attr('number'),
   perHour: DS.attr('number'),
-  perMinute: DS.attr('number')
+  perMinute: DS.attr('number'),
+  numOf: DS.attr('number')
 });

@@ -14,6 +14,7 @@ export default Ember.Component.extend({
 	},
 
 	totalCostPerMinute : Ember.computed('numOf', function() {
+		this.get('participant').set('numOf', this.get('numOf'));
 		var costPerMinute = this.get('numOf') * this.get('participant').get('perMinute');
 		var formatted = parseFloat(costPerMinute, 10).toFixed(2);
 		return '$' + formatted;
