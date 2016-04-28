@@ -1,0 +1,6 @@
+<h2>How long was your meeting?</h2>
+<select onchange={{action "selectTime" value="target.value"}}>
+  {{#each times as |selected|}}
+    <option value={{selected}} selected={{eq selectedTime selected }}>{{selected}} Minutes</option>
+  {{/each}}
+</select> 

@@ -1,2 +1,10 @@
-{{meetingCost}}
-<h2>Fuck that's expensive!</h2>
+<h2>This meeting cost:</h2>
+{{totalMeetingCost}}
+
+Time: {{participants}}
+
+<p>{{particpants}}!!!!</p>
+
+{{#each participants as |person|}}
+    <p>{{person.time.content.time}}!</p>
+  {{/each}}

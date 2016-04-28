@@ -7,6 +7,9 @@
 
 <div id="container">
 	<div id="left">
+		{{meeting-time}}
+	</div>
+	<div id="center">
 		{{#each model as |data|}}
 		  {{participants-list participant=data}}
 		{{/each}}

@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 var default_data = [{
   id: 1,
-  type: 'participants',
+  type: 'participant',
   attributes: {
     title: 'Number of DEVs',
     perYear: 100000,
@@ -11,9 +11,9 @@ var default_data = [{
     numOf: 0
   },
   relationships: {}
-}, {
+  }, {
   id: 2,
-  type: 'participants',
+  type: 'participant',
   attributes: {
     title: 'Number of QAs',
     perYear: 82000,
@@ -22,15 +22,22 @@ var default_data = [{
     numOf: 0
   },
   relationships: {}
-}, {
+  }, {
   id: 3,
-  type: 'participants',
+  type: 'participant',
   attributes: {
     title: 'Number of BAs',
     perYear: 75000,
     perHour: 36.06,
     perMinute: 0.60,
     numOf: 0
+  },
+  relationships: {}
+  }, {
+  id: 1,
+  type: 'time',
+  attributes: {
+    time: 15
   },
   relationships: {}
 }];
@@ -41,6 +48,6 @@ export default Ember.Route.extend({
       data: default_data
     });
 
-    return this.store.peekAll('participants');
+    return this.store.peekAll('participant');
   }
 });

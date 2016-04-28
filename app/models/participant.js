@@ -6,5 +6,6 @@ export default Model.extend({
   perYear: DS.attr('number'),
   perHour: DS.attr('number'),
   perMinute: DS.attr('number'),
-  numOf: DS.attr('number')
+  numOf: DS.attr('number'),
+  time: DS.belongsTo('time', {async: true})
 });

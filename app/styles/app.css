@@ -11,12 +11,18 @@ margin-right: 5%;
 
 #left {
 float: left;
-width: 40%;
+width: 30%;
+overflow: hidden;
+}
+
+#center {
+float: left;
+width: 35%;
 overflow: hidden;
 }
 
 #right {
 float: left;
-width: 50%;
+width: 25%;
 overflow: hidden;
 }
