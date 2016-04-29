@@ -1,10 +1,7 @@
 <h2>This meeting cost:</h2>
 {{totalMeetingCost}}
 
-Time: {{participants}}
-
-<p>{{particpants}}!!!!</p>
-
-{{#each participants as |person|}}
-    <p>{{person.time.content.time}}!</p>
-  {{/each}}
+ 
+<div style="display:none">
+{{getMeetingLength}}
+</div>

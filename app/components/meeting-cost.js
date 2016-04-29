@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 	store: Ember.inject.service('store'),
-	totalMeetingCost : Ember.computed('participants.@each.numOf', 'participants.[1].time.content.time',function() {
+	getMeetingLength : Ember.computed('participants.@each.time', function() {
+		return this.get('participants').objectAt(0).get('time');
+	}),
+	totalMeetingCost : Ember.computed('participants.@each.numOf', 'getMeetingLength.content.time', function() {
 		var runningCost = 0;
 
 		for (var i = 0; i < this.get('participants.length'); i++) {
