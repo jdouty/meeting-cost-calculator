@@ -2,6 +2,8 @@
 
 Estimate how much your meetings cost by adding developers, qa, ba, and business managers. Using glassdoor average salary for each position.
 
+Current Test URL: https://meeting-cost.firebaseapp.com/
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
