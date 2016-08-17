@@ -14,7 +14,7 @@ export default Ember.Component.extend({
 
 			var participant = this.get('participants').objectAt(i);
 			var numberOf = participant.get('numOf');
-			var perMin = participant.get('perMinute')
+			var perMin = participant.get('perMinute');
 			runningCost = runningCost + ((numberOf * perMin) * currentTime);
 		}
 
@@ -30,7 +30,7 @@ export default Ember.Component.extend({
 
 			var participant = this.get('participants').objectAt(i);
 			var numberOf = participant.get('numOf');
-			var perMin = participant.get('perMinute')
+			var perMin = participant.get('perMinute');
 			runningCost = (runningCost + ((numberOf * perMin) * currentTime));
 		}
 

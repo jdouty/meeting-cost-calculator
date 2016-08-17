@@ -6,15 +6,15 @@
 </div>
 
 <div id="container">
-	<div id="left">
+	<div class="item" id="left">
 		{{meeting-time}}
 	</div>
-	<div id="center">
+	<div class="item" id="center">
 		{{#each model as |data|}}
 		  {{participants-list participant=data}}
 		{{/each}}
 	</div>
-	<div id="right">
+	<div class="item" id="right">
 		{{meeting-cost participants=model}}
 	</div>
 </div>

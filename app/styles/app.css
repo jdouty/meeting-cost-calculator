@@ -1,28 +1,44 @@
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2,
+strong {
+  color: #333;
+}
+
+body {
+  color: #555;
+  background: #f5f7f9;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
 /* Style for the header */
 #header {
-    text-align: center;
+  text-align: center;
 }
 
 /* Style for the App */
 #container {
-margin-left: 5%;
-margin-right: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-
-#left {
-float: left;
-width: 30%;
-overflow: hidden;
+.item {
+  flex-grow: 1;
 }
 
 #center {
-float: left;
-width: 35%;
-overflow: hidden;
+  flex-grow: 2;
 }
 
-#right {
-float: left;
-width: 25%;
-overflow: hidden;
+/* Small screens */
+@media all and (max-width: 850px) {
+  #container {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
 }
