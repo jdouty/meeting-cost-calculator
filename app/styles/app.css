@@ -36,9 +36,11 @@ body {
 }
 
 /* Small screens */
-@media all and (max-width: 850px) {
+@media all and (max-width: 860px) {
   #container {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
